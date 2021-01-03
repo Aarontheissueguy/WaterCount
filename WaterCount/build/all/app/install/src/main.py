@@ -1,39 +1,39 @@
 from datetime import date
 def addWater(amount): #add a defined amount in ml of water to the today.txt file
-    file = open( "../data/" + str(date) + ".txt","a")
+    file = open( "src/" + str(date) + ".txt","a")
     file.write(str(amount) + "\n")
     file.close()
 
 def storeUnit(unit):
-    file = open( "../data/" + "unit" + ".txt","a")
+    file = open( "src/" + "unit" + ".txt","a")
     file.seek(0)
     file.truncate()
     file.write(str(unit))
     file.close()
 
 def returnUnit():
-    file = open( "../data/" + "unit" + ".txt","r")
+    file = open( "src/" + "unit" + ".txt","r")
     unit = file.readlines()
     print(unit[0])
     file.close()
     return unit[0]
 
 def storeGoal(goal):
-    file = open( "../data/" + "goal" + ".txt","a")
+    file = open( "src/" + "goal" + ".txt","a")
     file.seek(0)
     file.truncate()
     file.write(str(goal))
     file.close()
 
 def returnGoal():
-    file = open( "../data/" + "goal" + ".txt","r")
+    file = open( "src/" + "goal" + ".txt","r")
     goal = file.readlines()
     print(goal[0])
     file.close()
     return goal[0]
 
 def progressImage():
-    file = open( "../data/" + str(date) + ".txt","r")
+    file = open( "src/" + str(date) + ".txt","r")
     goal = returnGoal()
     progressList = file.readlines()
     progress = 0
@@ -55,7 +55,7 @@ def progressImage():
     file.close()
 
 def progressPercent():
-        file = open( "../data/" + str(date) + ".txt","r")
+        file = open( "src/" + str(date) + ".txt","r")
         goal = returnGoal()
         progressList = file.readlines()
         progress = 0
