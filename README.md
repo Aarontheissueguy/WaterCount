@@ -1,6 +1,6 @@
 # WaterCount
 
-A short description of your app
+This app lets you track the amount of water you drink per day. You can set goals and the size of your waterbottles.
 
 ## License
 
