@@ -1,0 +1,15 @@
+{
+    "name": "watercount.aaron",
+    "description": "A short description of your app",
+    "architecture": "@CLICK_ARCH@",
+    "title": "WaterCount",
+    "hooks": {
+        "WaterCount": {
+            "apparmor": "WaterCount.apparmor",
+            "desktop":  "WaterCount.desktop"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "Aaron Hafer <aaronhafer@gmx.de>",
+    "framework" : "ubuntu-sdk-16.04"
+}

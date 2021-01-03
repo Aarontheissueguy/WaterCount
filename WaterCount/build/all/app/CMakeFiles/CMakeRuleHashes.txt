@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+81153592a724834f7a9479e56b21d234 CMakeFiles/WaterCount.desktop
+56f21f646459de6d531f45780943d3fa po/CMakeFiles/watercount.aaron.pot
