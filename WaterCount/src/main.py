@@ -1,39 +1,62 @@
 from datetime import date
-def addWater(amount): #add a defined amount in ml of water to the today.txt file
-    file = open( "src/" + str(date) + ".txt","a")
+import os
+def makeDirs():
+    try:
+        os.mkdir("/home/phablet/.local/share/watercount.aaron/")
+    except:
+        pass
+
+def addWater(amount):
+
+    file = open( "/home/phablet/.local/share/watercount.aaron/" + str(date.today()) + ".txt","a")
     file.write(str(amount) + "\n")
     file.close()
 
 def storeUnit(unit):
-    file = open( "src/" + "unit" + ".txt","a")
+
+    addWater(0)
+    file = open( "/home/phablet/.local/share/watercount.aaron/" + "unit" + ".txt","w")
     file.seek(0)
     file.truncate()
     file.write(str(unit))
     file.close()
 
 def returnUnit():
-    file = open( "src/" + "unit" + ".txt","r")
-    unit = file.readlines()
-    print(unit[0])
-    file.close()
-    return unit[0]
 
+    try:
+        addWater(0)
+        file = open( "/home/phablet/.local/share/watercount.aaron/" + "unit" + ".txt","r")
+        unit = file.readlines()
+        print(unit[0])
+        file.close()
+        return unit[0]
+    except:
+        return "250"
 def storeGoal(goal):
-    file = open( "src/" + "goal" + ".txt","a")
+
+    addWater(0)
+    file = open( "/home/phablet/.local/share/watercount.aaron/" + "goal" + ".txt","w")
     file.seek(0)
     file.truncate()
     file.write(str(goal))
     file.close()
 
 def returnGoal():
-    file = open( "src/" + "goal" + ".txt","r")
-    goal = file.readlines()
-    print(goal[0])
-    file.close()
-    return goal[0]
+
+    addWater(0)
+    try:
+        file = open( "/home/phablet/.local/share/watercount.aaron/" + "goal" + ".txt","r")
+        goal = file.readlines()
+        print(goal[0])
+        file.close()
+        return goal[0]
+    except:
+        return "2000"
 
 def progressImage():
-    file = open( "src/" + str(date) + ".txt","r")
+
+    addWater(0)
+    file = open( "/home/phablet/.local/share/watercount.aaron/" + str(date.today()) + ".txt","r")
     goal = returnGoal()
     progressList = file.readlines()
     progressList = [x[:-1] for x in progressList]
@@ -60,20 +83,21 @@ def progressImage():
     file.close()
 
 def progressPercent():
-        file = open( "src/" + str(date) + ".txt","r")
-        goal = returnGoal()
-        progressList = file.readlines()
-        progressList = [x[:-1] for x in progressList]
-        progress = 0
-        for line in progressList:
-            try:
-                progress += int(line)
-            except:
-                pass
-            print(progress)
-        progress = float(progress) / float(goal)
-        return progress
 
+    addWater(0)
+    file = open( "/home/phablet/.local/share/watercount.aaron/" + str(date.today()) + ".txt","r")
+    goal = returnGoal()
+    progressList = file.readlines()
+    progressList = [x[:-1] for x in progressList]
+    progress = 0
+    for line in progressList:
+        try:
+            progress += int(line)
+        except:
+            pass
+        print(progress)
+    progress = float(progress) / float(goal)
+    return progress
 
-date = date.today()
-addWater(0)
+def speak(text):
+    return text

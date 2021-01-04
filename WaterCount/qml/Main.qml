@@ -23,6 +23,10 @@ Window {
           addImportPath(Qt.resolvedUrl('../src/'));
           importModule('main', function() {});
           console.log('after importModule');
+          py.call('main.makeDirs', [], function(result) {
+              console.log("after call of Makedirs")
+
+          })
           py.call('main.progressImage', [], function(result) {
               console.log("after call of progressImage")
               progressImage.source = result

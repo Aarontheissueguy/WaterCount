@@ -1,6 +1,6 @@
 # WaterCount
 
-This version of the app does not work on moblie devices yet. You can run it with "clickable desktop".
+This app lets you track the amount of water you drink per day. You can set goals and the size of your waterbottles.
 
 ## License
 
