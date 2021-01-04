@@ -174,8 +174,8 @@ Window {
     }
     Rectangle{
       id: saveUnitRectangle //save button for the unit value
-      width: saveGoalText.width + 10
-      height: saveGoalText.height + 10
+      width: saveUnitText.width + 10
+      height: saveUnitText.height + 10
       color: "grey"
       anchors.right: progressImage.right
       anchors.verticalCenter: unitRectangle.verticalCenter
