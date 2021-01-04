@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aaron/projects/WaterCount
+CMAKE_SOURCE_DIR = /home/aaron/projects/WaterCountClickableDesktop/WaterCount
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aaron/projects/WaterCount/build/all/app
+CMAKE_BINARY_DIR = /home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app
 
 #=============================================================================
 # Target rules for target CMakeFiles/WaterCount_FILES.dir
@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/aaron/projects/WaterCount/build/all/app
 CMakeFiles/WaterCount_FILES.dir/all:
 	$(MAKE) -f CMakeFiles/WaterCount_FILES.dir/build.make CMakeFiles/WaterCount_FILES.dir/depend
 	$(MAKE) -f CMakeFiles/WaterCount_FILES.dir/build.make CMakeFiles/WaterCount_FILES.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/aaron/projects/WaterCount/build/all/app/CMakeFiles --progress-num= "Built target WaterCount_FILES"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app/CMakeFiles --progress-num= "Built target WaterCount_FILES"
 .PHONY : CMakeFiles/WaterCount_FILES.dir/all
 
 # Include target in all.
@@ -76,9 +76,9 @@ all: CMakeFiles/WaterCount_FILES.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/WaterCount_FILES.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/projects/WaterCount/build/all/app/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/WaterCount_FILES.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/projects/WaterCount/build/all/app/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app/CMakeFiles 0
 .PHONY : CMakeFiles/WaterCount_FILES.dir/rule
 
 # Convenience name for target.
@@ -103,7 +103,7 @@ clean: CMakeFiles/WaterCount_FILES.dir/clean
 CMakeFiles/WaterCount.desktop.dir/all:
 	$(MAKE) -f CMakeFiles/WaterCount.desktop.dir/build.make CMakeFiles/WaterCount.desktop.dir/depend
 	$(MAKE) -f CMakeFiles/WaterCount.desktop.dir/build.make CMakeFiles/WaterCount.desktop.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/aaron/projects/WaterCount/build/all/app/CMakeFiles --progress-num=1 "Built target WaterCount.desktop"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app/CMakeFiles --progress-num=1 "Built target WaterCount.desktop"
 .PHONY : CMakeFiles/WaterCount.desktop.dir/all
 
 # Include target in all.
@@ -113,9 +113,9 @@ all: CMakeFiles/WaterCount.desktop.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/WaterCount.desktop.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/projects/WaterCount/build/all/app/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/WaterCount.desktop.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/projects/WaterCount/build/all/app/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app/CMakeFiles 0
 .PHONY : CMakeFiles/WaterCount.desktop.dir/rule
 
 # Convenience name for target.
@@ -158,7 +158,7 @@ po/preinstall:
 po/CMakeFiles/watercount.aaron.pot.dir/all:
 	$(MAKE) -f po/CMakeFiles/watercount.aaron.pot.dir/build.make po/CMakeFiles/watercount.aaron.pot.dir/depend
 	$(MAKE) -f po/CMakeFiles/watercount.aaron.pot.dir/build.make po/CMakeFiles/watercount.aaron.pot.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/aaron/projects/WaterCount/build/all/app/CMakeFiles --progress-num=2 "Built target watercount.aaron.pot"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app/CMakeFiles --progress-num=2 "Built target watercount.aaron.pot"
 .PHONY : po/CMakeFiles/watercount.aaron.pot.dir/all
 
 # Include target in all.
@@ -168,9 +168,9 @@ all: po/CMakeFiles/watercount.aaron.pot.dir/all
 
 # Build rule for subdir invocation for target.
 po/CMakeFiles/watercount.aaron.pot.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/projects/WaterCount/build/all/app/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 po/CMakeFiles/watercount.aaron.pot.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/projects/WaterCount/build/all/app/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app/CMakeFiles 0
 .PHONY : po/CMakeFiles/watercount.aaron.pot.dir/rule
 
 # Convenience name for target.

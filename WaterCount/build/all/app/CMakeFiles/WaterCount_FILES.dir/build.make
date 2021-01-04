@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aaron/projects/WaterCount
+CMAKE_SOURCE_DIR = /home/aaron/projects/WaterCountClickableDesktop/WaterCount
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aaron/projects/WaterCount/build/all/app
+CMAKE_BINARY_DIR = /home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app
 
 # Utility rule file for WaterCount_FILES.
 
@@ -67,6 +67,6 @@ CMakeFiles/WaterCount_FILES.dir/clean:
 .PHONY : CMakeFiles/WaterCount_FILES.dir/clean
 
 CMakeFiles/WaterCount_FILES.dir/depend:
-	cd /home/aaron/projects/WaterCount/build/all/app && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aaron/projects/WaterCount /home/aaron/projects/WaterCount /home/aaron/projects/WaterCount/build/all/app /home/aaron/projects/WaterCount/build/all/app /home/aaron/projects/WaterCount/build/all/app/CMakeFiles/WaterCount_FILES.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aaron/projects/WaterCountClickableDesktop/WaterCount /home/aaron/projects/WaterCountClickableDesktop/WaterCount /home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app /home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app /home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app/CMakeFiles/WaterCount_FILES.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/WaterCount_FILES.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/aaron/projects/WaterCount/po
+# Install script for directory: /home/aaron/projects/WaterCountClickableDesktop/WaterCount/po
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

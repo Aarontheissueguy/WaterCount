@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aaron/projects/WaterCount
+CMAKE_SOURCE_DIR = /home/aaron/projects/WaterCountClickableDesktop/WaterCount
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aaron/projects/WaterCount/build/all/app
+CMAKE_BINARY_DIR = /home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app
 
 # Utility rule file for WaterCount.desktop.
 
@@ -54,9 +54,9 @@ CMAKE_BINARY_DIR = /home/aaron/projects/WaterCount/build/all/app
 include CMakeFiles/WaterCount.desktop.dir/progress.make
 
 CMakeFiles/WaterCount.desktop:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/aaron/projects/WaterCount/build/all/app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Merging translations into WaterCount.desktop..."
-	LC_ALL=C /usr/bin/intltool-merge -d -u /home/aaron/projects/WaterCount/po /home/aaron/projects/WaterCount/WaterCount.desktop.in WaterCount.desktop
-	sed -i 's/WaterCount-//g' /home/aaron/projects/WaterCount/build/all/app/WaterCount.desktop
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Merging translations into WaterCount.desktop..."
+	LC_ALL=C /usr/bin/intltool-merge -d -u /home/aaron/projects/WaterCountClickableDesktop/WaterCount/po /home/aaron/projects/WaterCountClickableDesktop/WaterCount/WaterCount.desktop.in WaterCount.desktop
+	sed -i 's/WaterCount-//g' /home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app/WaterCount.desktop
 
 WaterCount.desktop: CMakeFiles/WaterCount.desktop
 WaterCount.desktop: CMakeFiles/WaterCount.desktop.dir/build.make
@@ -73,6 +73,6 @@ CMakeFiles/WaterCount.desktop.dir/clean:
 .PHONY : CMakeFiles/WaterCount.desktop.dir/clean
 
 CMakeFiles/WaterCount.desktop.dir/depend:
-	cd /home/aaron/projects/WaterCount/build/all/app && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aaron/projects/WaterCount /home/aaron/projects/WaterCount /home/aaron/projects/WaterCount/build/all/app /home/aaron/projects/WaterCount/build/all/app /home/aaron/projects/WaterCount/build/all/app/CMakeFiles/WaterCount.desktop.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aaron/projects/WaterCountClickableDesktop/WaterCount /home/aaron/projects/WaterCountClickableDesktop/WaterCount /home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app /home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app /home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app/CMakeFiles/WaterCount.desktop.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/WaterCount.desktop.dir/depend
 

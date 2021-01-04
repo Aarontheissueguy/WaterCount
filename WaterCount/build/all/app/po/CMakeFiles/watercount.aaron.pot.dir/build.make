@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aaron/projects/WaterCount
+CMAKE_SOURCE_DIR = /home/aaron/projects/WaterCountClickableDesktop/WaterCount
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aaron/projects/WaterCount/build/all/app
+CMAKE_BINARY_DIR = /home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app
 
 # Utility rule file for watercount.aaron.pot.
 
@@ -54,10 +54,10 @@ CMAKE_BINARY_DIR = /home/aaron/projects/WaterCount/build/all/app
 include po/CMakeFiles/watercount.aaron.pot.dir/progress.make
 
 po/CMakeFiles/watercount.aaron.pot:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/aaron/projects/WaterCount/build/all/app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating translation template"
-	cd /home/aaron/projects/WaterCount/build/all/app/po && /usr/bin/intltool-extract --update --type=gettext/ini --srcdir=/home/aaron/projects/WaterCount WaterCount.desktop.in
-	cd /home/aaron/projects/WaterCount/build/all/app/po && /usr/bin/xgettext -o watercount.aaron.pot -D /home/aaron/projects/WaterCount/po -D /home/aaron/projects/WaterCount/build/all/app/po --from-code=UTF-8 --c++ --qt --language=javascript --add-comments=TRANSLATORS --keyword=tr --keyword=tr:1,2 --keyword=ctr:1c,2 --keyword=dctr:2c,3 --keyword=N_ --keyword=_ --keyword=dtr:2 --keyword=dtr:2,3 --keyword=tag --keyword=tag:1c,2 --package-name='watercount.aaron' --sort-by-file ../qml/Main.qml WaterCount.desktop.in.h
-	cd /home/aaron/projects/WaterCount/build/all/app/po && /usr/bin/cmake -E copy watercount.aaron.pot /home/aaron/projects/WaterCount/po
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating translation template"
+	cd /home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app/po && /usr/bin/intltool-extract --update --type=gettext/ini --srcdir=/home/aaron/projects/WaterCountClickableDesktop/WaterCount WaterCount.desktop.in
+	cd /home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app/po && /usr/bin/xgettext -o watercount.aaron.pot -D /home/aaron/projects/WaterCountClickableDesktop/WaterCount/po -D /home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app/po --from-code=UTF-8 --c++ --qt --language=javascript --add-comments=TRANSLATORS --keyword=tr --keyword=tr:1,2 --keyword=ctr:1c,2 --keyword=dctr:2c,3 --keyword=N_ --keyword=_ --keyword=dtr:2 --keyword=dtr:2,3 --keyword=tag --keyword=tag:1c,2 --package-name='watercount.aaron' --sort-by-file ../qml/Main.qml WaterCount.desktop.in.h
+	cd /home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app/po && /usr/bin/cmake -E copy watercount.aaron.pot /home/aaron/projects/WaterCountClickableDesktop/WaterCount/po
 
 watercount.aaron.pot: po/CMakeFiles/watercount.aaron.pot
 watercount.aaron.pot: po/CMakeFiles/watercount.aaron.pot.dir/build.make
@@ -70,10 +70,10 @@ po/CMakeFiles/watercount.aaron.pot.dir/build: watercount.aaron.pot
 .PHONY : po/CMakeFiles/watercount.aaron.pot.dir/build
 
 po/CMakeFiles/watercount.aaron.pot.dir/clean:
-	cd /home/aaron/projects/WaterCount/build/all/app/po && $(CMAKE_COMMAND) -P CMakeFiles/watercount.aaron.pot.dir/cmake_clean.cmake
+	cd /home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app/po && $(CMAKE_COMMAND) -P CMakeFiles/watercount.aaron.pot.dir/cmake_clean.cmake
 .PHONY : po/CMakeFiles/watercount.aaron.pot.dir/clean
 
 po/CMakeFiles/watercount.aaron.pot.dir/depend:
-	cd /home/aaron/projects/WaterCount/build/all/app && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aaron/projects/WaterCount /home/aaron/projects/WaterCount/po /home/aaron/projects/WaterCount/build/all/app /home/aaron/projects/WaterCount/build/all/app/po /home/aaron/projects/WaterCount/build/all/app/po/CMakeFiles/watercount.aaron.pot.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aaron/projects/WaterCountClickableDesktop/WaterCount /home/aaron/projects/WaterCountClickableDesktop/WaterCount/po /home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app /home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app/po /home/aaron/projects/WaterCountClickableDesktop/WaterCount/build/all/app/po/CMakeFiles/watercount.aaron.pot.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : po/CMakeFiles/watercount.aaron.pot.dir/depend
 

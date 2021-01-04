@@ -6,7 +6,6 @@
 //assets/glass5.png
 //assets/logo.svg
 //assets/glass2.png
-//src/2021-01-03.txt
 //src/goal.txt
 //src/unit.txt
 //src/main.py

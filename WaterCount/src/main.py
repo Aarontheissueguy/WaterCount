@@ -36,9 +36,14 @@ def progressImage():
     file = open( "src/" + str(date) + ".txt","r")
     goal = returnGoal()
     progressList = file.readlines()
+    progressList = [x[:-1] for x in progressList]
+    print(progressList)
     progress = 0
     for line in progressList:
-        progress += int(line)
+        try:
+            progress += int(line)
+        except:
+            pass
         print(progress)
     progress = float(progress) / float(goal)
     if progress >= 1.0:
@@ -58,9 +63,13 @@ def progressPercent():
         file = open( "src/" + str(date) + ".txt","r")
         goal = returnGoal()
         progressList = file.readlines()
+        progressList = [x[:-1] for x in progressList]
         progress = 0
         for line in progressList:
-            progress += int(line)
+            try:
+                progress += int(line)
+            except:
+                pass
             print(progress)
         progress = float(progress) / float(goal)
         return progress
