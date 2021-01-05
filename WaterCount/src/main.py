@@ -97,7 +97,12 @@ def progressPercent():
             pass
         print(progress)
     progress = float(progress) / float(goal)
-    return progress
+    if progress <= 1:
+        return progress
+    elif progress > 1:
+        return 1
+    else:
+        return progress
 
 def speak(text):
     return text
