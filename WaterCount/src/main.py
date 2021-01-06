@@ -104,5 +104,36 @@ def progressPercent():
     else:
         return progress
 
+def undoRedo(action):
+    if action == "undo":
+
+            file = open( "/home/phablet/.local/share/watercount.aaron/" + str(date.today()) + ".txt","r")
+            lines = file.readlines()
+            file.close()
+
+            file = open( "/home/phablet/.local/share/watercount.aaron/" + "redo" + ".txt","w")
+            file.seek(0)
+            file.truncate()
+            redo = lines[-1]
+            file.write(redo)
+            file.close()
+            del lines[-1]
+
+            file = open( "/home/phablet/.local/share/watercount.aaron/" + str(date.today()) + ".txt","w")
+            file.seek(0)
+            file.truncate()
+            file.close()
+
+            file = open( "/home/phablet/.local/share/watercount.aaron/" + str(date.today()) + ".txt","w")
+            for line in lines:
+                file.write(line)
+            file.close()
+
+    if action == "redo":
+            file = open( "/home/phablet/.local/share/watercount.aaron/" + "redo" + ".txt","r")
+            lines = file.readlines()
+            file.close()
+            addWater(int(lines[0]))
+
 def speak(text):
     return text
