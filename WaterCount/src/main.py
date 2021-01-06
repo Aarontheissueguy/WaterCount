@@ -105,10 +105,19 @@ def progressPercent():
         return progress
 
 def undoRedo(action):
+    action = "undo"
     if action == "undo":
 
             file = open( "/home/phablet/.local/share/watercount.aaron/" + str(date.today()) + ".txt","r")
             lines = file.readlines()
+            while "0\n" in lines:
+                for line in lines:
+                    if int(line) == 0:
+                        del lines[lines.index(line)]
+                    else:
+                        pass
+
+
             file.close()
 
             file = open( "/home/phablet/.local/share/watercount.aaron/" + "redo" + ".txt","w")

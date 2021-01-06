@@ -228,11 +228,37 @@ Window {
           anchors.top: parent.top
           anchors.bottom: parent.bottom
           anchors.left: parent.left
-          Image{
-            width: height
-            height: settingsLogo.height / 2
+          Rectangle{
             anchors.centerIn: parent
-            source: "../assets/stats.png"
+            width: parent.width * 0.75
+            height: parent.height * 0.75
+            color: "#ff7400"
+            radius: 20
+            Image{
+              anchors.centerIn: parent
+              width: height
+              height: parent.height * 0.75
+              source: "../assets/undo.png"
+            }
+            MouseArea {
+                anchors.fill: parent
+                onPressed: parent.scale = 0.8
+                onReleased: {
+                  py.call('main.undoRedo', ["undo"], function(result) {
+                      console.log("after call of undoRedo")
+                  })
+                  py.call('main.progressImage', [], function(result) {
+                      glassImage.source = result
+                      console.log("after call of progressImage")
+                  })
+                  py.call('main.progressPercent', [], function(result) {
+                      progressBar.width = progressBar.parent.width * result
+                      progressText.text = "" + 100 * result + "%"
+                      console.log("after call of progressPercent")
+                  })
+                  parent.scale = 1
+                }
+            }
           }
         }
         Item{
