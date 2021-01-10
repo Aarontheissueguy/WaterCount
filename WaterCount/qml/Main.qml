@@ -390,13 +390,13 @@ Window {
               anchors.left: parent.left
               anchors.topMargin: parent.height / 20
               anchors.leftMargin: parent.width / 20
-              text:"Version: 1.1.0"}
+              text:"Version: 1.1.1"}
             Text{
               anchors.top: thirdAbout.top
               anchors.left: parent.left
               anchors.topMargin: parent.height / 20
               anchors.leftMargin: parent.width / 20
-              text: "Water is important for the body \n(that should not be new to \nyou). If you are like me you tend to drink very little of it.\nFor this reason I created WaterCount. Like this I can\nmake sure my tiny brain gets enough liquid. You can\nset a custom goal and the size of your\nwater bottles (unit). Make sure to report bugs \nand request features on GitHub. For the \nnear future I plan to add a few more stats. Don't worry your \npast data will be included once that happens."
+              text: "Water is important for the body \n(that should not be new to \nyou). If you are like me you tend to drink very little of it.\nFor this reason I created WaterCount. Like this I can\nmake sure my tiny brain gets enough liquid. You can\nset a custom goal and the size of your\nwater bottles (unit). Make sure to report bugs \nand request features on GitHub. For the \nnear future I plan to add a few more stats. \nDon't worry your \npast data will be included once that happens."
             }
           }
         }
