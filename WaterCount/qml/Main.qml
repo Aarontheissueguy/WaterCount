@@ -82,6 +82,7 @@ Window {
                       progressText.text = "" + 100 * result + "%"
                       console.log("after call of progressPercent")
                   })
+                  Haptics.play()
                   glassImage.scale = 1.0
                 }
             }
@@ -327,11 +328,13 @@ Window {
           anchors.fill: parent
           color: "#587684"
           Image{
+            id: aboutLogo
             source: "../assets/logo.png"
             width: parent.height/ 5
             height: width
             anchors.horizontalCenter: parent.horizontalCenter
-            y: parent.height / 10
+            anchors.top: aboutRectangle.bottom
+            anchors.topMargin: aboutRectangle.height / 2
             MouseArea {
                 anchors.fill: parent
                 onPressed: parent.scale = 0.8
@@ -341,6 +344,59 @@ Window {
                   parent.sale = 1
 
                 }
+            }
+          }
+          Rectangle{
+            id: aboutRectangle
+            width: parent.width
+            height: aboutLabel.height * 2
+            color: "#455a64"
+            Label{
+              id: aboutLabel
+              anchors.top: parent.top
+              anchors.topMargin: units.gu(2)
+              anchors.left: parent.left
+              anchors.leftMargin: units.gu(2)
+              text: "About:"
+              color: "black"
+              textSize: Label.XLarge
+              font.bold: true
+            }
+          }
+          Rectangle{
+            color: "#455a64"
+            width: parent.width
+            anchors.bottom: parent.bottom
+            anchors.top: aboutLogo.bottom
+            anchors.topMargin: aboutLogo.height / 3
+            Text{
+              id: firstAbout
+              anchors.top: parent.top
+              anchors.left: parent.left
+              anchors.topMargin: parent.height / 20
+              anchors.leftMargin: parent.width / 20
+              text:"Developed by: AaronTheIssueGuy"}
+            Text{
+              id: secondAbout
+              anchors.top: firstAbout.top
+              anchors.left: parent.left
+              anchors.topMargin: parent.height / 20
+              anchors.leftMargin: parent.width / 20
+              onLinkActivated: Qt.openUrlExternally(link)
+              text: "Source code(GitHub): Aarontheissueguy/WaterCount"}
+            Text{
+              id: thirdAbout
+              anchors.top: secondAbout.top
+              anchors.left: parent.left
+              anchors.topMargin: parent.height / 20
+              anchors.leftMargin: parent.width / 20
+              text:"Version: 1.1.0"}
+            Text{
+              anchors.top: thirdAbout.top
+              anchors.left: parent.left
+              anchors.topMargin: parent.height / 20
+              anchors.leftMargin: parent.width / 20
+              text: "Water is important for the body \n(that should not be new to \nyou). If you are like me you tend to drink very little of it.\nFor this reason I created WaterCount. Like this I can\nmake sure my tiny brain gets enough liquid. You can\nset a custom goal and the size of your\nwater bottles (unit). Make sure to report bugs \nand request features on GitHub. For the \nnear future I plan to add a few more stats. Don't worry your \npast data will be included once that happens."
             }
           }
         }
