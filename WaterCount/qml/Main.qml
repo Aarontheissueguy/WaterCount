@@ -162,7 +162,7 @@ Window {
                   Text{
                     anchors.bottom: parent.top
                     anchors.left: parent.left
-                    text: "Goal(ml):"
+                    text: i18n.tr("Goal(ml):")
                   }
                   TextInput{
                     id: goalInput
@@ -183,7 +183,7 @@ Window {
                   Text{
                     anchors.bottom: parent.top
                     anchors.left: parent.left
-                    text: "Unit:(ml)"
+                    text: i18n.tr("Unit:(ml)")
                   }
                   TextInput{
                     id: unitInput
@@ -210,7 +210,7 @@ Window {
               anchors.verticalCenter: parent.verticalCenter
               font.bold: true
               scale: 1.5
-              text: "save"
+              text: i18n.tr("save")
             }
             MouseArea {
                 anchors.fill: parent
@@ -357,7 +357,7 @@ Window {
               anchors.topMargin: units.gu(2)
               anchors.left: parent.left
               anchors.leftMargin: units.gu(2)
-              text: "About:"
+              text: i18n.tr("About:")
               color: "black"
               textSize: Label.XLarge
               font.bold: true
@@ -375,7 +375,7 @@ Window {
               anchors.left: parent.left
               anchors.topMargin: parent.height / 20
               anchors.leftMargin: parent.width / 20
-              text:"Developed by: AaronTheIssueGuy"}
+              text:i18n.tr("Developed by: AaronTheIssueGuy"})
             Text{
               id: secondAbout
               anchors.top: firstAbout.top
@@ -383,20 +383,20 @@ Window {
               anchors.topMargin: parent.height / 20
               anchors.leftMargin: parent.width / 20
               onLinkActivated: Qt.openUrlExternally(link)
-              text: "Source code(GitHub): Aarontheissueguy/WaterCount"}
+              text: i18n.tr("Source code(GitHub): Aarontheissueguy/WaterCount"})
             Text{
               id: thirdAbout
               anchors.top: secondAbout.top
               anchors.left: parent.left
               anchors.topMargin: parent.height / 20
               anchors.leftMargin: parent.width / 20
-              text:"Version: 1.1.1"}
+              text:i18n.tr("Version: 1.1.1"})
             Text{
               anchors.top: thirdAbout.top
               anchors.left: parent.left
               anchors.topMargin: parent.height / 20
               anchors.leftMargin: parent.width / 20
-              text: "Water is important for the body \n(that should not be new to \nyou). If you are like me you tend to drink very little of it.\nFor this reason I created WaterCount. Like this I can\nmake sure my tiny brain gets enough liquid. You can\nset a custom goal and the size of your\nwater bottles (unit). Make sure to report bugs \nand request features on GitHub. For the \nnear future I plan to add a few more stats. \nDon't worry your \npast data will be included once that happens."
+              text: i18n.tr("Water is important for the body \n(that should not be new to \nyou). If you are like me you tend to drink very little of it.\nFor this reason I created WaterCount. Like this I can\nmake sure my tiny brain gets enough liquid. You can\nset a custom goal and the size of your\nwater bottles (unit). Make sure to report bugs \nand request features on GitHub. For the \nnear future I plan to add a few more stats. \nDon't worry your \npast data will be included once that happens.")
             }
           }
         }
