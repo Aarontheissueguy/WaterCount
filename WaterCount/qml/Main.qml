@@ -183,7 +183,7 @@ Window {
                   Text{
                     anchors.bottom: parent.top
                     anchors.left: parent.left
-                    text: i18n.tr("Unit:(ml)")
+                    text: i18n.tr("Unit(ml):")
                   }
                   TextInput{
                     id: unitInput
@@ -375,7 +375,8 @@ Window {
               anchors.left: parent.left
               anchors.topMargin: parent.height / 20
               anchors.leftMargin: parent.width / 20
-              text:i18n.tr("Developed by: AaronTheIssueGuy"})
+              text:i18n.tr("Developed by: AaronTheIssueGuy")
+            }
             Text{
               id: secondAbout
               anchors.top: firstAbout.top
@@ -383,14 +384,16 @@ Window {
               anchors.topMargin: parent.height / 20
               anchors.leftMargin: parent.width / 20
               onLinkActivated: Qt.openUrlExternally(link)
-              text: i18n.tr("Source code(GitHub): Aarontheissueguy/WaterCount"})
+              text: i18n.tr("Source code(GitHub): Aarontheissueguy/WaterCount")
+            }
             Text{
               id: thirdAbout
               anchors.top: secondAbout.top
               anchors.left: parent.left
               anchors.topMargin: parent.height / 20
               anchors.leftMargin: parent.width / 20
-              text:i18n.tr("Version: 1.1.1"})
+              text:i18n.tr("Version: 1.1.1")
+            }
             Text{
               anchors.top: thirdAbout.top
               anchors.left: parent.left
