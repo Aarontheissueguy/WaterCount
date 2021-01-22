@@ -3,47 +3,48 @@
 # This file is distributed under the same license as the watercount.aaron package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: watercount.aaron\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-22 19:28+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2021-01-22 19:10+0000\n"
+"PO-Revision-Date: 2021-01-22 20:12+0100\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de\n"
 
 #: ../qml/Main.qml:165
 msgid "Goal(ml):"
-msgstr ""
+msgstr "Ziel(ml):"
 
 #: ../qml/Main.qml:186
 msgid "Unit(ml):"
-msgstr ""
+msgstr "Einheit(ml):"
 
 #: ../qml/Main.qml:213
 msgid "save"
-msgstr ""
+msgstr "speichern"
 
 #: ../qml/Main.qml:360
 msgid "About:"
-msgstr ""
+msgstr "Über:"
 
 #: ../qml/Main.qml:378
 msgid "Developed by: AaronTheIssueGuy"
-msgstr ""
+msgstr "Entwickelt von: Aarontheissueguy"
 
 #: ../qml/Main.qml:387
 msgid "Source code(GitHub): Aarontheissueguy/WaterCount"
-msgstr ""
+msgstr "Quellcode(GitHub): Aarontheissueguy/WaterCount"
 
 #: ../qml/Main.qml:395
 msgid "Version: 1.1.1"
-msgstr ""
+msgstr "Version: 1.1.1"
 
 #: ../qml/Main.qml:402
 msgid ""
@@ -59,7 +60,18 @@ msgid ""
 "Don't worry your \n"
 "past data will be included once that happens."
 msgstr ""
+"Wasser ist wichtig für den Körper \n"
+"(das sollte Ihnen nicht neu sein \n"
+"). Wenn Sie wie ich sind, neigen Sie dazu, sehr wenig davon zu trinken.\n"
+"Aus diesem Grund habe ich WaterCount erstellt. So kann ich\n"
+"sicherstellen, dass mein kleines Gehirn genug Flüssigkeit bekommt. Sie können\n"
+"ein individuelles Ziel und die Größe Ihrer\n"
+"Wasserflaschen (Einheit) wählen. Stellen Sie sicher, dass Sie Bugs melden \n"
+"und beantragen Sie Funktionen auf GitHub. Für die \n"
+"nahe Zukunft plane ich, ein paar weitere Statistiken hinzuzufügen. \n"
+"Machen Sie sich keine Sorgen, Ihre \n"
+"vergangenen Daten werden mit einbezogen, sobald das passiert."
 
 #: WaterCount.desktop.in.h:1
 msgid "WaterCount"
-msgstr ""
+msgstr "WasserZähler"
