@@ -1,15 +1,15 @@
-import QtQuick 2.7
-import Ubuntu.Components 1.3
-import QtQuick.Window 2.0
-//import QtQuick.Controls 2.2
+import QtQuick 2.9
 import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.0
+import QtQuick.Controls 2.2
+import Ubuntu.Components 1.3
 import io.thp.pyotherside 1.3
-Window {
+MainView {
     id: root
-    //objectName: 'mainView'
-    //applicationName: 'watercount.aaron'
+    objectName: 'mainView'
+    applicationName: 'watercount.aaron'
     //automaticOrientation: false
+    backgroundColor: "#587684"
     Python {
       id: py
       Component.onCompleted: { // functions that run at the start of the app to overwrite the default Values with user defined ones
