@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the watercount.aaron package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: watercount.aaron\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-01-23 16:27+0000\n"
+"PO-Revision-Date: 2021-01-23 19:16+0100\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: nl\n"
+
+#: ../qml/Main.qml:165
+msgid "Goal(ml):"
+msgstr "Doel (in ml):"
+
+#: ../qml/Main.qml:186
+msgid "Unit(ml):"
+msgstr "Glas/Flesje (in ml):"
+
+#: ../qml/Main.qml:213
+msgid "save"
+msgstr "Opslaan"
+
+#: ../qml/Main.qml:360
+msgid "About:"
+msgstr "Over:"
+
+#: ../qml/Main.qml:378
+msgid "Developed by: AaronTheIssueGuy"
+msgstr "Ontwikkeld door AaronTheIssueGuy"
+
+#: ../qml/Main.qml:387
+msgid "Source code(GitHub): Aarontheissueguy/WaterCount"
+msgstr "Broncode (GitHub): Aarontheissueguy/WaterCount"
+
+#: ../qml/Main.qml:395
+msgid "Version: 1.1.1"
+msgstr "Versie: 1.1.1"
+
+#: ../qml/Main.qml:402
+msgid ""
+"Water is important for the body \n"
+"(that should not be new to \n"
+"you). If you are like me you tend to drink very little of it.\n"
+"For this reason I created WaterCount. Like this I can\n"
+"make sure my tiny brain gets enough liquid. You can\n"
+"set a custom goal and the size of your\n"
+"water bottles (unit). Make sure to report bugs \n"
+"and request features on GitHub. For the \n"
+"near future I plan to add a few more stats. \n"
+"Don't worry your \n"
+"past data will be included once that happens."
+msgstr ""
+"Water is belangrijk - dat wist je waarschijnlijk\n"
+"al. Als je, net zoals ik, te weinig drinkt, dan is\n"
+"Drinkmonitor een handig hulpmiddel. Op deze manier\n"
+"kun je zorgen dat je hersens genoeg vocht krijgen. Je kunt\n"
+"je eigen doel instellen en de grootte van je glas of fles.\n"
+"Bugs en ideeën kun je doorgeven op GitHub. In de nabije\n"
+"toekomst voorzie ik de app van meer statistieken. Maar\n"
+"geen zorgen: je gegevens gaan gewoon mee naar de nieuwste versie."
+
+#: WaterCount.desktop.in.h:1
+msgid "WaterCount"
+msgstr "Drinkmonitor"
