@@ -11,5 +11,5 @@
     },
     "version": "1.1.1",
     "maintainer": "Aaron Hafer <aaronhafer@gmx.de>",
-    "framework" : "ubuntu-sdk-16.04"
+    "framework" : "ubuntu-sdk-20.04"
 }
